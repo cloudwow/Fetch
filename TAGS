@@ -1,0 +1,80 @@
+
+lib/fetch/acts_as_fetcher.rb,603
+module FetchFetch3,20
+  module ActsAsFetcherActsAsFetcher4,33
+    def self.included(base_class)included9,64
+    def setup_fetcher(options={})setup_fetcher23,362
+    def record_result(url,result)record_result35,664
+    def playback_result(url)playback_result48,959
+    def url_to_file_path(url)url_to_file_path66,1274
+    def fetch(url,options={})fetch71,1399
+    module ClassMethodsClassMethods88,1749
+      def try_encoding(string,encoding)try_encoding89,1773
+      def decode_downloaded_string(data)decode_downloaded_string100,2018
+      def fetch(url,options={})fetch113,2372
+
+lib/fetch/acts_as_scraper.rb,108
+module FetchFetch3,20
+  module ActsAsScraperActsAsScraper4,33
+    def uri_escape(value)uri_escape7,62
+
+lib/fetch/acts_throttled.rb,761
+module FetchFetch1,0
+  module ActsThrottledActsThrottled2,13
+    def apply_throttler_options(options)apply_throttler_options8,119
+    def fetched_timesfetched_times12,376
+    def bucket_periodbucket_period16,434
+    def recalculaterecalculate19,500
+    def throttle_bucket_sizethrottle_bucket_size23,604
+    def throttle_bucket_size=(val)throttle_bucket_size=26,701
+    def max_fetches_per_secondmax_fetches_per_second31,799
+    def max_fetches_per_second=(val)max_fetches_per_second=34,902
+    def age(time_stamp)age39,1004
+    def bucket_head_agebucket_head_age43,1070
+    def bucket_headbucket_head48,1172
+    def trim_buckettrim_bucket52,1271
+    def bucket_countbucket_count59,1412
+    def enforce_delayenforce_delay63,1486
+
+lib/fetch/file_fetcher.rb,173
+module FetchFetch1,0
+  class FileFetcherFileFetcher2,13
+    def initialize(filepath=filepath,options={})initialize5,64
+    def self.fetch(url,options={})fetch10,191
+
+lib/fetch/html_utility.rb,220
+module FetchFetch6,64
+  module HtmlUtilityHtmlUtility7,78
+    def HtmlUtility.remove_all_tags(html)remove_all_tags8,100
+    def HtmlUtility.sanitize_html(html,allowed_tags=nil,remove_tags=nil)sanitize_html12,196
+
+lib/fetch/http_fetcher.rb,108
+module FetchFetch3,20
+  class HttpFetcherHttpFetcher4,33
+    def initialize(options={})initialize7,91
+
+lib/fetch/robots.rb,580
+module FetchFetch6,71
+  class RobotsRobots7,84
+    class ParsedRobotsParsedRobots11,133
+      def initialize(uri, user_agent)initialize13,163
+      def allowed?(uri, user_agent)allowed?53,1301
+      def other_valuesother_values88,2165
+      def to_regex(pattern)to_regex94,2243
+    def self.get_robots_txt(uri, user_agent)get_robots_txt104,2520
+    def self.timeout=(t)timeout114,2829
+    def self.timeouttimeout118,2886
+    def initialize(user_agent)initialize122,2954
+    def allowed?(uri)allowed?127,3048
+    def other_values(uri)other_values134,3265
+
+lib/fetch.rb,0
+
+test/test_helper.rb,38
+class Test::Unit::TestCaseTest9,185
+
+test/throttler_test.rb,219
+class ThrottlerTest < Test::Unit::TestCaseThrottlerTest3,23
+  def test_slow_delaytest_slow_delay6,98
+  def test_fast_delaytest_fast_delay19,424
+  def test_fast_delay_with_buckettest_fast_delay_with_bucket32,742
